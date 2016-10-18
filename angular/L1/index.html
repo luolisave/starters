@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Li's Angular Starter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+    <script src="bower_components/alertifyjs/dist/js/alertify.js"></script>
+    <script src="bower_components/alertifyjs/dist/js/ngAlertify.js"></script>
+
+
+    <script src="libs/angularUtils/src/directives/pagination/dirPagination.js"></script>
+
+
+    <link rel='stylesheet' href='bower_components/textAngular/dist/textAngular.css'>
+    <script src='bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+    <script src='bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+    <script src='bower_components/textAngular/dist/textAngular.min.js'></script>
+
+    <script type="text/javascript" src="bower_components/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body ng-controller="bodyController">
+
+    <ui-view></ui-view>
+
+    <!-- app -->
+    <script src="src/app.js"></script>
+
+    <!-- main -->
+    <script src="src/modules/main/controllers/body.ctrl.js"></script>
+    <script src="src/modules/main/controllers/home.ctrl.js"></script>
+    <script src="src/modules/main/controllers/pdf.ctrl.js"></script>
+    <script src="src/modules/main/controllers/about.ctrl.js"></script>
+    <script src="src/modules/main/services/user.service.js"></script>
+    <script src="src/modules/main/services/api.service.js"></script>
+
+    <!-- page -->
+    <script src="src/modules/page/controllers/page.ctrl.js"></script>
+    <script src="src/modules/page/controllers/page-list.ctrl.js"></script>
+    <script src="src/modules/page/services/page.service.js"></script>
+
+    <!-- config route and bootstrap angular app. -->
+    <script src="src/config.js"></script>
+</body>
+</html>

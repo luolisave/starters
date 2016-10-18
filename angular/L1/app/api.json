@@ -1,0 +1,10 @@
+{
+    "name": "These are the configurations for development",
+    "env": "development",
+    "API_PROTOCOL": "http",
+    "API_HOST": "localhost",
+    "API_PORT": "3000",
+    "uri": {
+        "get_pages": "mock/pages.json"
+    }
+}
