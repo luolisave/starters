@@ -10,7 +10,7 @@ window.App = React.createClass({
       <div>
         <div className="row">
             <div className="col-sm-4">
-                <img className="img-responsive" src="assets/img/logo.png" />
+                <img className="img-responsive" src="assets/img/logo_32.png" />
             </div>
             <div className="col-sm-6">
                 
