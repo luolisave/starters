@@ -18,8 +18,13 @@ gulp.task('_browser-sync',function(){
                 "/i18n":             __dirname + "/app/i18n",
                 "/mock":             __dirname + "/mock"
             }
-        }
+        },
+        host:"0.0.0.0",
+        port:8080
     });
+    //,
+    //    port:8082,
+    //    https:true
 });
 
 gulp.task('_watch', ['_browser-sync'], function () {
