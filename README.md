@@ -19,6 +19,7 @@ Starter Level
 --------------
 - L0 - Will only use online cdn links, no need of nodejs and npm.  This is for rapid deploy. 
 - L1 - Will use bower and npm only.
-- L2 - Will contain build, dist and JSHint etc.
-- L3 - will contain Unit Test.
+- L2 - Will contain rquireJS etc.
+- L3 - Will contain build, dist and JSHint etc.
+- L4 - will contain Unit Test.
 
