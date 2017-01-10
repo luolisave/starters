@@ -29,7 +29,9 @@ AngularJS Starter Level
 
 
 ReactJS Starter Levels
-- N/A
+- eL0 - cdn only
+
+- L0 - will have route. user bower install.
 
 AngularJS 2 Starter Levels
 - L0 - for code test at this moment.
