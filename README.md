@@ -15,12 +15,22 @@ Folder Structure
 - Second Level folder will represent **Starter Level**.
 - Inside Starter Level (eg. react/L1/) are acture starters.
 
-Starter Level
+AngularJS Starter Level
 --------------
+- eL0 - embeded L0. cdn only, no route, no need of nodejs and npm.  This is for embed deployment. 
+- eL1 - embeded L0. cdn only, with ui-route, no need of nodejs and npm.  This is for rapid deploy. 
+
 - L0 - Will only use online cdn links, no need of nodejs and npm.  This is for rapid deploy. 
 - L1 - Will use bower and npm only.
 - L2 - Will use gulp and browserSync.
 - L3 - Will contain rquireJS etc.
 - L4 - Will contain build, dist and JSHint etc.
 - L5 - will contain Unit Test.
+
+
+ReactJS Starter Levels
+- N/A
+
+AngularJS 2 Starter Levels
+- L0 - for code test at this moment.
 

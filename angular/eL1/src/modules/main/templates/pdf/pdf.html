@@ -1,0 +1,106 @@
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-1 sidenav">
+            <!--
+            <p><a href="#/home">Home</a></p>
+            <p><a href="#">Link</a></p>
+            <p><a href="#/about">About</a></p>
+            -->
+        </div>
+        <div class="col-sm-10 text-left">
+            <!-- --------------------------------- Dashboard starts ----------------------------------------------- -->
+            <!-- --------------------------------- Dashboard starts ----------------------------------------------- -->
+            <!-- --------------------------------- Dashboard starts ----------------------------------------------- -->
+            <div class="container-fluid">
+                <div class="col-sm-12 padding-top-bottom-16px">
+
+                </div>
+                <div class="col-sm-12">
+                    <h3>PDFs</h3>
+                    <!-- modal --------------------------------------------------------------------------------------------------------------------------------------- -->
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th class="col-md-1">ID</th>
+                            <th class="col-md-1">Language</th>
+                            <th class="col-md-8">Title</th>
+                            <th class="col-md-2">Options</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <!-- ng-repeat="pageList in page.list" -->
+                            <td>1</td>
+                            <td>English</td>
+                            <td>Test File</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <!--
+                                <button type="button" class="btn btn-primary btn-small" data-toggle="modal"
+                                        data-target="#pdfModal">
+                                    Open PDF
+                                </button>
+                                -->
+
+                                <a style="cursor: pointer;" ng-click="openPdf('test')"> <!-- will load file such as /assets/pdf/test_en.pdf -->
+                                    <button type="button" class="btn btn-primary btn-small">Open</button>
+                                </a>
+                                <!-- Button trigger modal ends -->
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <div>
+                        <!-- Modal box -->
+                        <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel">
+                            <div class="" role="document"> <!-- modal-dialog -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="pdfModalLabel">PDF Viewer</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div ng-switch="lang">
+                                            <object ng-switch-when="en" data="/assets/pdf/{{pdfFileName}}_en.pdf" type="application/pdf" width="100%" height="750px">
+                                            </object>
+                                            <object ng-switch-when="fr" data="/assets/pdf/{{pdfFileName}}_fr.pdf" type="application/pdf" width="100%" height="750px">
+                                            </object>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        </button>
+                                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal box ends -->
+                    </div>
+                    <!-- modal ends --------------------------------------------------------------------------------------------------------------------------------------- -->
+                </div>
+
+                <div class="col-sm-12">
+                    <h3 class="chart-title" align="center">&nbsp;</h3>
+
+                </div>
+            </div>
+            <!-- --------------------------------- Dashboard ends ------------------------------------------------- -->
+            <!-- --------------------------------- Dashboard ends ------------------------------------------------- -->
+            <!-- --------------------------------- Dashboard ends ------------------------------------------------- -->
+        </div>
+        <div class="col-sm-1 sidenav">
+            <!--
+            <div class="well">
+                <p>ADS</p>
+            </div>
+            <div class="well">
+                <p>ADS</p>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
