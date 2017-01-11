@@ -1,0 +1,114 @@
+{
+  "Rates": [
+    {
+      "Symbol": "EURUSD",
+      "Bid": "1.04614",
+      "Ask": "1.04615",
+      "Spread": "0.12",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "AUDUSD",
+      "Bid": "0.73653",
+      "Ask": "0.73658",
+      "Spread": "0.50",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "EURGBP",
+      "Bid": "0.86729",
+      "Ask": "0.86736",
+      "Spread": "0.70",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "USDCAD",
+      "Bid": "1.32503",
+      "Ask": "1.32502",
+      "Spread": "-0.10",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "GBPUSD",
+      "Bid": "1.20615",
+      "Ask": "1.20623",
+      "Spread": "0.80",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "NZDUSD",
+      "Bid": "0.69736",
+      "Ask": "0.69738",
+      "Spread": "0.20",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "AUDJPY",
+      "Bid": "86.034",
+      "Ask": "86.041",
+      "Spread": "0.70",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "EURJPY",
+      "Bid": "122.195",
+      "Ask": "122.203",
+      "Spread": "0.80",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "EURAUD",
+      "Bid": "1.42025",
+      "Ask": "1.42035",
+      "Spread": "1.00",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    },
+    {
+      "Symbol": "USDJPY",
+      "Bid": "116.806",
+      "Ask": "116.809",
+      "Spread": "0.30",
+      "ProductType": "1",
+      "metaBid": "-1",
+      "metaAsk": "1",
+      "metaSpread": "0"
+      
+    }
+  ]
+}

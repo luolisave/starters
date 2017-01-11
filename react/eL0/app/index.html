@@ -2,32 +2,134 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>ReactJS with Route!</title>
+    <title>ReactJS Starter eL0 | embed use </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--this new version not working with react 15.x.x-->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script>--> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
 
     <!--<script src="//cdnjs.cloudflare.com/ajax/libs/react-router/4.0.0-0/react-router.min.js"></script>-->
+    <style type="text/css">
+      #reactAppDiv h3 {
+        
+      }
+      #reactAppDiv ul {
+        list-style-type: none;
+        padding: 0px;
+      }
+      #reactAppDiv ul li {
+        font-family: 'Opensans-bold', Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        border-bottom:1px #AAA solid;
+        padding:4px;
+      }
+      #reactAppDiv .header-row-ul {
+        padding-bottom:2px;
+        margin-bottom: 0px;
+      }
+      #reactAppDiv .header-row-li {
+        border-bottom:1px gray solid;
+      }
+      
+      #reactAppDiv ul li .col-pair-header {
+        display: inline-block;
+        width: 25%;
+        font-weight: bold;
+        padding: 4px;
+      }
+      #reactAppDiv ul li .col-bid-header {
+        display: inline-block;
+        width: 25%;
+        font-weight: bold;
+        padding: 4px;
+      }
+      #reactAppDiv ul li .col-ask-header {
+        display: inline-block;
+        width: 25%;
+        font-weight: bold;
+        padding: 4px;
+      }
+      #reactAppDiv ul li .col-spread-header {
+        display: inline-block;
+        width: 25%;
+        font-weight: bold;
+        color: orange;
+        padding: 4px;
+      }
+      
+      #reactAppDiv ul li span {
+        padding: 4px;
+        border-radius: 5px;
+      }
+      
+      #reactAppDiv ul li .col-pair {
+        display: inline-block;
+        width: 25%;
+        font-weight: bold;
+      }
+      #reactAppDiv ul li .col-bid {
+        display: inline-block;
+        width: 25%;
+      }
+      #reactAppDiv ul li .col-ask {
+        display: inline-block;
+        width: 25%;
+      }
+      #reactAppDiv ul li .col-spread {
+        display: inline-block;
+        width: 25%;
+        color: orange;
+      }
+      
+      @keyframes price-green {
+          0%   {background-color: white;}
+          60%  {background-color: #0B0;}
+          100% {background-color: white;}
+      }
+      @keyframes price-red {
+          0%   {background-color: white;}
+          60%  {background-color: red;}
+          100% {background-color: white;}
+      }
+      .us-price-up{
+        animation-name: price-green;
+        animation-duration: 1.3s;
+      }
+      
+      .us-price-down{
+        animation-name: price-red;
+        animation-duration: 1.3s;
+      }
+    </style>
     
   </head>
   <body>
     <div class="container-fluid">
-        <div id="container"></div>
-        <!--
-        <div class="row">
-            <div class="col-md-12"></div>
-        </div>
-        -->
+      <div class="row">
+          <div class="col-md-3">
+            <div id="reactAppDiv"></div>
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+          </div>
+      </div>
     </div>
     <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="welcome.js"></script>
     <script type="text/babel" src="boot.js"></script>
   </body>
 </html>
