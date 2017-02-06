@@ -7,6 +7,9 @@ var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 var rename = require("gulp-rename");
 
+var less = require('gulp-less');
+var path = require('path');
+
 // Static Server
 gulp.task('_browser-sync',function(){
     browserSync.init({
@@ -47,10 +50,23 @@ gulp.task('_copy_api_development', function(){
         .pipe(gulp.dest("./app"));
 });
 
+gulp.task('_compile_less', function () {
+  return gulp.src('./app/assets/less/**/*.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('./app/assets/css'));
+});
+
 // gulp.task('build_production', ["_copy_index", "_copy_api_development"], function(){
 //     gulp.start('_watch');
 // });
 
-gulp.task('default', ["_copy_index", "_copy_api_development"], function(){
+gulp.task('build', ["_copy_index", "_copy_api_development", "_compile_less"], function(){
+    return gulp;
+    //gulp.start('_watch');
+});
+
+gulp.task('default', ["build"], function(){  // "_copy_index", "_copy_api_development", "_compile_less"
     gulp.start('_watch');
 });
