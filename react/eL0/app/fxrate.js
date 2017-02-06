@@ -1,18 +1,14 @@
 /*global $*/
 var React = window.React;
+var ReactDOM = window.ReactDOM;
 
-// class Welcome extends React.Component {
-//   render() {
-//     return <h1>Hello, {this.props.name}</h1>;
-//   }
-// }
-
+/*
+ * fxrate component
+*/
 (function (app) {
   app.com = app.com || { };
-  app.config = {
-    "api":"https://ratesjson.fxcm.com/DataDisplayer",
-    "ProductTypeFilter": 1
-  };
+  app.config = app.config || { };
+  
   
   app.com.fxrate = class FxRate extends React.Component {
     constructor(props) {
@@ -28,17 +24,17 @@ var React = window.React;
       var self = this;
       function refreshData(){
         var request = $.ajax({
-          url: app.config.api,
+          url: "https://ratesjson.fxcm.com/DataDisplayer",
           type: "GET",
           dataType: "jsonp"
         });
         
         request.done(function(data) {
           setTimeout(function(){
-            $("#reactAppDiv").removeClass("us-price-up");
-            $("#reactAppDiv").removeClass("us-price-down");
-            $("#reactAppDiv").removeClass("cn-price-up");
-            $("#reactAppDiv").removeClass("cn-price-down");
+            $("body").removeClass("us-price-up");
+            $("body").removeClass("us-price-down");
+            $("body").removeClass("cn-price-up");
+            $("body").removeClass("cn-price-down");
           },2500);
           
           self.state.lastRates = $.extend(true, {}, self.state.rates);
@@ -88,12 +84,14 @@ var React = window.React;
                  data.Rates[i].Symbol === "AUDJPY" ||
                  data.Rates[i].Symbol === "EURJPY" ||
                  data.Rates[i].Symbol === "EURAUD" ||
-                 data.Rates[i].Symbol === "USDJPY" 
+                 data.Rates[i].Symbol === "USDJPY" ||
+                 data.Rates[i].Symbol === "USDCAD" ||
+                 data.Rates[i].Symbol === "CADUSD"
                ){
                  //do nothing
                }else{
                  //delete
-                 console.log("delete ", data.Rates[i].Symbol);
+                 //console.log("delete ", data.Rates[i].Symbol);
                  delete data.Rates[i];
                }
              }
@@ -118,28 +116,24 @@ var React = window.React;
     render() {
       return (
         <div>
-            <h3>Forex Rates & Spreads</h3>
             <ul className="header-row-ul">
               <li className="header-row-li">
                 <div>
-                   <div className="col-pair-header">PAIR</div>
-                   <div className="col-bid-header">BID</div>
-                   <div className="col-ask-header">ASK</div>
-                   <div className="col-spread-header">SPREAD</div>
+                   
                 </div>
               </li>
             </ul>
             <ul>
               {
                     this.state.rates.map(function(item) {
-                        if(item.ProductType == app.config.ProductTypeFilter){
+                        if(item.ProductType == 1){
                           return (
                           <li>
                             <div>
-                               <div className="col-pair"><span>{item.metaSymbol}</span></div>
-                               <div className="col-bid"><span className={item.metaBidCSS}>{item.Bid}</span></div>
-                               <div className="col-ask"><span className={item.metaAskCSS}>{item.Ask}</span></div>
-                               <div className="col-spread"><span>{item.Spread}</span></div>
+                               <div className="col-data col-pair"><span>{item.metaSymbol}</span></div>
+                               <div className="col-data col-bid"><span className={item.metaBidCSS}>{item.Bid}</span></div>
+                               <div className="col-data col-ask"><span className={item.metaAskCSS}>{item.Ask}</span></div>
+                               <div className="col-data col-spread"><span>{item.Spread}</span></div>
                             </div>
                           </li>
                           )

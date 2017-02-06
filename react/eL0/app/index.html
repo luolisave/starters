@@ -111,6 +111,80 @@
         animation-name: price-red;
         animation-duration: 1.3s;
       }
+      
+      /*
+       * Component style
+      */
+      
+      .OttFxRate ul {
+        list-style-type: none;
+        padding: 0px;
+      }
+      .OttFxRate ul li {
+        font-family: 'Opensans-bold', Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        border-bottom:1px #AAA solid;
+        padding:4px;
+      }
+      .OttFxRate .header-row-ul {
+        padding-bottom:2px;
+        margin-bottom: 0px;
+      }
+      .OttFxRate .header-row-li {
+        border-bottom:1px gray solid;
+      }
+      
+      .OttFxRate ul li .col-header {
+        text-align:center;
+        display: inline-block;
+        width: 25%;
+        padding: 4px;
+      }
+      
+      .OttFxRate ul li .col-pair-header {
+        font-weight: bold;
+      }
+      .OttFxRate ul li .col-bid-header {
+      
+      }
+      .OttFxRate ul li .col-ask-header {
+      
+      }
+      .OttFxRate ul li .col-spread-header {
+        color: orange;
+      }
+      
+      .OttFxRate ul li .col-data {
+        text-align:center;
+      }
+      
+      
+      
+      .OttFxRate ul li span {
+        padding: 4px;
+        border-radius: 5px;
+        font-size:12px;
+      }
+      
+      .OttFxRate ul li .col-pair {
+        display: inline-block;
+        width: 25%;
+        font-weight: bold;
+      }
+      .OttFxRate ul li .col-bid {
+        display: inline-block;
+        width: 25%;
+      }
+      .OttFxRate ul li .col-ask {
+        display: inline-block;
+        width: 25%;
+      }
+      .OttFxRate ul li .col-spread {
+        display: inline-block;
+        width: 25%;
+        color: orange;
+      }
     </style>
     
   </head>
@@ -121,6 +195,10 @@
             <div id="reactAppDiv"></div>
           </div>
           <div class="col-md-3">
+            <div style="border:1px solid green;">
+                 <h4>Forex Rates & Spreads</h4>
+                <div class="OttFxRate"></div>
+            </div>
           </div>
           <div class="col-md-3">
           </div>
@@ -128,7 +206,7 @@
           </div>
       </div>
     </div>
-    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="fxrate.js"></script>
     <script type="text/babel" src="welcome.js"></script>
     <script type="text/babel" src="boot.js"></script>
   </body>
