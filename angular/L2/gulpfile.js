@@ -62,11 +62,10 @@ gulp.task('_compile_less', function () {
 //     gulp.start('_watch');
 // });
 
-gulp.task('build', ["_copy_index", "_copy_api_development", "_compile_less"], function(){
-    return gulp;
-    //gulp.start('_watch');
+gulp.task('serve-development', ["_copy_index", "_copy_api_development", "_compile_less"], function(){
+    gulp.start('_watch');
 });
 
-gulp.task('default', ["build"], function(){  // "_copy_index", "_copy_api_development", "_compile_less"
-    gulp.start('_watch');
+gulp.task('default', ["serve-development"], function(){  // "_copy_index", "_copy_api_development", "_compile_less"
+    
 });
