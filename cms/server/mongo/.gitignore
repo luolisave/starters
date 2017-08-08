@@ -1,0 +1,16 @@
+﻿node_modules/
+app/bower_components/
+app/uploads/*
+!/app/uploads/upload.md
+bower_components/
+.idea/
+app/index.html
+app/api.json
+/server/db/mongodb/*
+!/server/db/mongodb/noignore.txt
+/server/db/mongodb.log.d/*
+!/server/db/mongodb.log.d/noignore.txt
+
+
+app_reactjs/index.html
+app_reactjs/api.json

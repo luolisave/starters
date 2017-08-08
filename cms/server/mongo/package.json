@@ -1,0 +1,24 @@
+{
+  "name": "lis-cms-backend-api",
+  "version": "0.1.2",
+  "description": "Li's CMS backend API server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": ""
+  },
+  "author": "Li Luo",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cors": "2.8.1",
+    "express": "4.14.0",
+    "gulp-nodemon": "2.2.1",
+    "mongodb": "2.2.19",
+    "multer": "1.2.1",
+    "sha.js": "2.4.5",
+    "socket.io": "1.7.3"
+  }
+}
