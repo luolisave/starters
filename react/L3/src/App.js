@@ -7,6 +7,7 @@ import GamesPage from './pages/GamesPage'
 import DashboardPage from './pages/DashboardPage'
 import InboxPage from './pages/InboxPage'
 import AboutPage from './pages/AboutPage'
+import ChildrenPage from './pages/ChildrenPage'
 import './App.css';
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
                             <li><Link to="/inbox">Inbox</Link></li>
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/games">Games</Link></li>
+                            <li><Link to="/children">Children</Link></li>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><a href="/"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -60,6 +62,7 @@ class App extends Component {
               <Route exact path='/games' component={GamesPage} />
               <Route exact path='/inbox' component={InboxPage} />
               <Route exact path='/about' component={AboutPage} />
+              <Route exact path='/children' component={ChildrenPage} />
               <Route path='*' component={NotFoundPage}/>
             </Switch>
 

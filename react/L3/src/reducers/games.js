@@ -4,7 +4,6 @@ export default function games(state = [], action = {}){
       console.log("games reducer: GAME_INIT. action.payload = ", action.payload);
 
       return action.payload;
-      break;
     default:
       console.log("games reducer: default");
       return state;
