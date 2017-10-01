@@ -1,0 +1,41 @@
+<p>
+  my-new-component works!
+</p>
+
+<div>
+  {{myObj | json}}
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let arr of myArray">{{arr}}</li>
+  </ul>
+</div>
+
+<div>
+  <img src="{{angularLogo}}">
+  <img [src]="angularLogo">
+  <img bind-src="angularLogo">
+  <img [src]="ImgBase64">
+</div>
+
+<div style="border:1px solid green; margin:4px; padding:4px;">
+  <button (click)="myClick()">Click me</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <h3>{{myString}}</h3>
+
+  <button (click)="myGet()">Click Subscribe(GET)</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <button (click)="myPost()">Click post(POST)</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+  <button (click)="myLogin()">Click Subscribe(Login)</button> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<div style="border:1px solid green; margin:4px; padding:4px;">
+  <h3>RxJS</h3>
+  
+</div>
+
+
+
+
