@@ -128,9 +128,9 @@
                   </li>
                 </ul> -->
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
-                  <li><a href="/">ABOUT US</a></li>
-                  <li><a href="/">SERVICE</a></li>
+                  <li [routerLinkActive]="['active']"><a [routerLink]="['home']">Home <span class="sr-only">(current)</span></a></li>
+                  <li [routerLinkActive]="['active']"><a [routerLink]="['demo']">DEMO</a></li>
+                  <li [routerLinkActive]="['active']"><a [routerLink]="['myrxjs']" href="/">RxJS</a></li>
                   <li><a href="/">NEWS</a></li>
                   <li><a href="/">CONTACT</a></li>
                 </ul>

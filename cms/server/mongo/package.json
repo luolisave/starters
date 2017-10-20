@@ -10,9 +10,13 @@
   "author": "Li Luo",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-rename": "^1.2.2",
+    "run-sequence": "^2.2.0"
   },
   "dependencies": {
     "body-parser": "1.15.2",
+    "browser-sync": "^2.18.13",
     "cors": "2.8.1",
     "express": "4.14.0",
     "gulp-nodemon": "2.2.1",

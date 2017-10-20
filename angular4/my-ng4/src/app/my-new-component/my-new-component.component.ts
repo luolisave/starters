@@ -27,8 +27,6 @@ export class MyNewComponentComponent implements OnInit {
     console.log("you clicked me! \n \n "+this.DataService.getMyData());
 
     console.log("===> subscribe obj = ", this.DataService.getAjaxData());
-    
-    
   }
 
   myGet(){

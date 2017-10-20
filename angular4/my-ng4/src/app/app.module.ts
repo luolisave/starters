@@ -13,7 +13,8 @@ import { PagesComponent } from './pages/pages.component';
 import { PageDetailComponent } from './page-detail/page-detail.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { PostComponent } from './post/post.component';
-import { PostDetailComponent } from './post/post-detail/post-detail.component'
+import { PostDetailComponent } from './post/post-detail/post-detail.component';
+import { MyRxjsComponent } from './my-rxjs/my-rxjs.component'
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'pages', component: PagesComponent},
   {path: 'pagedetail/:pageId', component: PageDetailComponent},
   {path: 'demo', component: MyNewComponentComponent},
+  {path: 'myrxjs', component: MyRxjsComponent},
   {path: 'post', component: PostComponent},
   {path: 'postdetail/:postId', component: PostDetailComponent},
   {path: 'hero-form', component: HeroFormComponent},
@@ -35,7 +37,8 @@ const routes: Routes = [
     PageDetailComponent,
     HeroFormComponent,
     PostComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    MyRxjsComponent
   ],
   imports: [
     BrowserModule,

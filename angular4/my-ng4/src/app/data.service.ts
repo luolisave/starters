@@ -6,23 +6,12 @@ export class DataService {
 
   constructor(private http: Http) { }
 
-  cars = ['Toyota', 'ford'];
-
   getMyData() {
     return "'haha, this is the data string from service.'";
   }
-
-
   //King Ajax Document: https://codecraft.tv/courses/angular/http/core-http-api/ 
 
   getAjaxData() {
-    // http.get('people.json')
-    //   // Call map on the response observable to get the parsed people object
-    //   .map(res => res.json())
-    //   // Subscribe to the observable to get the parsed people object and attach it to the
-    //   // component
-    //   .subscribe(people => this.people = people);
-
     /*
     this.http
         .get('/assets/data.json')
