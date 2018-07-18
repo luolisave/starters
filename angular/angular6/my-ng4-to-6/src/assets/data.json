@@ -1,0 +1,8 @@
+{
+    "status": 1,
+    "info": "mock data is here!",
+    "hello":"yes, in assets folder",
+    "records": [
+        1,2,3,4,5,6
+    ]
+}

@@ -1,0 +1,53 @@
+
+<div style="border:1px; margin:4px; padding:4px;">
+    <h1>my-new-component</h1>
+    <p>
+        my-new-component works!
+      </p>
+    <p>
+        <b>This page shows few basic use of Angular 4+</b>
+      </p>
+</div>
+
+<div style="border:1px solid gray; margin:4px; padding:4px;">
+  <h3>String from controller:</h3>
+  {{myObj | json}}
+</div>
+
+<div style="border:1px solid gray; margin:4px; padding:4px;">
+  <h3>For Loop:</h3>
+  <ul>
+    <li *ngFor="let arr of myArray">{{arr}}</li>
+  </ul>
+</div>
+
+<div style="border:1px solid gray; margin:4px; padding:4px;">
+  <h3>Attribute binding ways:</h3>
+  <img src="{{angularLogo}}">
+  <img [src]="angularLogo">
+  <img bind-src="angularLogo">
+  <img [src]="ImgBase64">
+</div>
+
+<div style="border:1px solid green; margin:4px; padding:4px;">
+    <h3>Calling service:</h3>
+
+  <button (click)="myClick()">Click me</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <h3>{{myString}}</h3>
+
+  <button (click)="myGet()">Click Subscribe(GET)</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <button (click)="myPost()">Click post(POST)</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+  <button (click)="myLogin()">Click Subscribe(Login)</button> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<div style="border:1px solid green; margin:4px; padding:4px;">
+  <h3>RxJS</h3>
+  
+</div>
+
+
+
+
