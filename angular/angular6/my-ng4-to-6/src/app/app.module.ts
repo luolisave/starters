@@ -14,7 +14,9 @@ import { PageDetailComponent } from './page-detail/page-detail.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { PostComponent } from './post/post.component';
 import { PostDetailComponent } from './post/post-detail/post-detail.component';
-import { MyRxjsComponent } from './my-rxjs/my-rxjs.component'
+import { MyRxjsComponent } from './my-rxjs/my-rxjs.component';
+import { TestComponent } from './test/test.component';
+import { TestButtonComponent } from './test/test-button/test-button.component'
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -26,6 +28,7 @@ const routes: Routes = [
   {path: 'post', component: PostComponent},
   {path: 'postdetail/:postId', component: PostDetailComponent},
   {path: 'hero-form', component: HeroFormComponent},
+  {path: 'test', component: TestComponent}
 ];
 
 @NgModule({
@@ -38,7 +41,9 @@ const routes: Routes = [
     HeroFormComponent,
     PostComponent,
     PostDetailComponent,
-    MyRxjsComponent
+    MyRxjsComponent,
+    TestComponent,
+    TestButtonComponent
   ],
   imports: [
     BrowserModule,
